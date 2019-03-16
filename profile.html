@@ -16,6 +16,9 @@
       th {
         padding: 5px;
       }
+      p {
+        margin: 0;
+      }
       .grey_bg_color {
         background-color: #a8a8a8;
       }
@@ -24,6 +27,17 @@
       }
       .invisible_font{
         color: white;
+      }
+      .twins_left {
+        float: left;
+        width: 48%
+      }
+      .twins_right {
+        float: right;
+        width: 48%
+      }
+      div {
+        margin-bottom: 7.77em;
       }
     </style>
   </head>
@@ -126,9 +140,8 @@
     <p align="justify">
       <b>Сведения о сдаче ЕГЭ и его результатах (со слов абитуриента):</b>
     </p>
-    <table align="justify">
-      <td>
-        <table border="1" align="justify">
+    <div>
+        <table class="twins_left" border="1" align="justify">
           <tr>
             <th>Предмет</th>
             <th>Балл</th>
@@ -151,9 +164,8 @@
           </tr>
         </table>
       </td>
-      <td class="invisible_font">_</td>
       <td>
-        <table border="1" align="justify">
+        <table class="twins_right" border="1" align="justify">
           <tr>
             <th>Предмет</th>
             <th>Балл</th>
@@ -175,8 +187,7 @@
             <td class="invisible_font">_</td>
           </tr>
         </table>
-      </td>
-    </table>
+    </div>
 
     <br />
     <p align="justify">
@@ -264,7 +275,7 @@
       </b>
     </p>
     <p align="justify"><b>__________</b></p>
-    <p align="justify"><sup>(заполнить из справочника №3)</sup></p>
+    <p align="center"><sup>(заполнить из справочника №3)</sup></p>
     <br />
     <p align="left">
       <b>А) Льгота для зачисления без вступительных испытаний</b>
@@ -302,6 +313,7 @@
     <br />
     <br />
     <p align="justify"><b>В) Целевой приём</b> __________</p>
+    <p align="center"><sup>(регион заполняется из справочника №5)</sup></p>
     <p align="justify">
       При поступлении по пунктам А, Б, В, указать в какую организацию паодано
       (будет подано) заявление о согласия на зачисления по условиям __________
@@ -315,6 +327,7 @@
     <p align="justify">
       Документы, подтверждающие наличие индивидуальных достижений __________
     </p>
+    <p align="center"><sup>(заполнить из справочника №4)</sup></p>
     <p align="justify">
       <b>Иностранный язык</b> (основной): <input type="checkbox" />
       <label>английский</label> <input type="checkbox" />
