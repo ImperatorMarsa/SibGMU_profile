@@ -12,8 +12,8 @@
       margin: 7mm 10mm 15mm 25mm;
     }
     table {
-      font-family: times;
-      font-size: 9.5pt;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
       width: 100%;
       border: black;
       border-collapse: collapse;
@@ -21,16 +21,16 @@
     td,
     th {
       padding: 5px;
-      font-family: times;
-      font-size: 9.5pt;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
     }
     label {
-      font-family: times;
-      font-size: 9.5pt;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
     }
     p {
-      font-family: times;
-      font-size: 9.5pt;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
       margin: 0;
     }
     td.grey_bg_color {
@@ -39,50 +39,186 @@
     .ghost_font {
       padding: 3px;
       color: #a8a8a8;
-      font-family: times;
+      font-family: "Times New Roman";
       font-size: 8pt;
     }
     .invisible_font {
       color: white;
     }
     .small_font {
-      font-family: times;
-      font-size: 6.5pt;
+      font-family: "Times New Roman";
+      font-size: 7pt;
+    }
+    .head_table {
+      padding: 0;
+      margin-top: -8px;
+      width: 100%;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
+    }
+    .cell_table {
+      padding: 0;
+      width: 1px;
+      font-family: "Times New Roman";
+      font-size: 9.4pt;
+    }
+    .underscore {
+      width: 100%;
+      border-bottom: 1px solid black;
     }
   </style>
   <p align="right">
     <b>Ректору ФГБОУ ВО СибГМУ Минздрава России О. С. Кобяковой</b>
   </p>
   <br />
-  <p align="justify"><b>Фамилия</b> __________</p>
-  <p align="justify">
-    <b>Имя</b> __________<b>Отчество </b>(при наличии) __________
-  </p>
-  <p align="justify"><b>Адрес по месту регистрации:</b></p>
-  <p align="justify">Индекс __________ Страна __________ Ренион __________</p>
-  <p align="justify">Район __________ Нас. пункт __________</p>
-  <p align="justify">
-    Ул./пр./пер. __________ Дом __________ Корп. __________ Кв. __________
-  </p>
-  <p align="justify">
-    Электронный адрес (по желанию поступающего) __________
-  </p>
-  <p align="justify">
-    Контактный телефон (по желанию поступающего) __________
-  </p>
-  <p align="justify">Дата рождения __________ Пол __________</p>
-  <p align="justify">
-    Сведения о гражданстве (отсутствии гражданства) __________
-  </p>
-  <p align="justify">
-    <b>Наименование и реквизиты документа, удостоверяющего личность</b>
-    __________
-  </p>
-  <p align="justify">серия __________ № __________, выдан __________</p>
-  <p align="justify">__________ когда __________</p>
-  <p align="justify"><b>Сведения об образовании</b> __________</p>
-  <p align="justify">Реквезиты документа(ов) об образовании __________</p>
-  <p align="justify">серия __________ № __________ Дата выдачи __________</p>
+  <table class="head_table">
+    <tr>
+      <th class="cell_table">Фамилия</th>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <th class="cell_table">Имя</th>
+      <td>__________</td>
+      <th class="cell_table">Отчество</th>
+      <td class="cell_table">
+        (при<span class="invisible_font">_</span>наличии)
+      </td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <th class="cell_table">
+        Адрес<span class="invisible_font"></span>_</span>по<span class="invisible_font"
+          >_</span
+        >месту<span class="invisible_font">_</span>регистрации:
+      </th>
+      <td class="invisible_font">_</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Индекс</td>
+      <td>__________</td>
+      <td class="cell_table">Страна</td>
+      <td>__________</td>
+      <td class="cell_table">Ренион</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Район</td>
+      <td>__________</td>
+      <td class="cell_table">Нас.<span class="invisible_font">_</span>пункт</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Ул./пр./пер.</td>
+      <td>__________</td>
+      <td class="cell_table">Дом</td>
+      <td>__________</td>
+      <td class="cell_table">Корп.</td>
+      <td>__________</td>
+      <td class="cell_table">Кв.</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Электронный<span class="invisible_font">_</span>адрес<span class="invisible_font">_</span>(по<span class="invisible_font">_</span>желанию<span class="invisible_font">_</span>поступающего)</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Контактный<span class="invisible_font">_</span>телефон<span class="invisible_font">_</span>(по<span class="invisible_font">_</span>желанию<span class="invisible_font">_</span>поступающего)</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Дата<span class="invisible_font">_</span>рождения</td>
+      <td>__________</td>
+      <td class="cell_table">Пол</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">
+        Сведения<span class="invisible_font">_</span>о<span class="invisible_font">_</span>гражданстве<span class="invisible_font">_</span>(отсутствии<span class="invisible_font">_</span>гражданства)
+      </td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <th class="cell_table">
+        Наименование<span class="invisible_font">_</span>и<span class="invisible_font">_</span>реквизиты<span class="invisible_font">_</span>документа,<span class="invisible_font">_</span>удостоверяющего<span class="invisible_font">_</span>личность
+      </th>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">серия</td>
+      <td width=66.6px>__________</td>
+      <td class="cell_table">№</td>
+      <td width=73px>__________</td>
+      <td class="cell_table">,<span class="invisible_font">_</span>выдан</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td>__________</td>
+      <td class="cell_table">когда</td>
+      <td>__________</td>
+    </tr>
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <th class="cell_table">Сведения<span class="invisible_font">_</span>об<span class="invisible_font">_</span>образовании</th>
+      <td>__________</td>
+    </tr>  
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">Реквезиты<span class="invisible_font">_</span>документа(ов)<span class="invisible_font">_</span>об<span class="invisible_font">_</span>образовании</td>
+      <td>__________</td>
+    </tr>  
+  </table>
+
+  <table class="head_table">
+    <tr>
+      <td class="cell_table">серия</td>
+      <td width=66.6px>__________</td>
+      <td class="cell_table">№</td>
+      <td width=73px>__________</td>
+      <td class="cell_table">Дата<span class="invisible_font">_</span>выдачи</td>
+      <td>__________</td>
+    </tr>  
+  </table>
+
   <br />
   <p align="center"><b>ЗАЯВЛЕНИЕ</b></p>
   <p align="justify">
@@ -367,8 +503,9 @@
     <b>Способ возврата поданных документов</b>
     в случае непоступления на обучение (в случае предоставления оригиналов
     документов)
-    <img src="unchecked.svg" /> <label> лично</label> <img src="unchecked.svg" />
-    <label> доверительное лиц</label> <img src="unchecked.svg" />
+    <img src="unchecked.svg" /> <label> лично</label>
+    <img src="unchecked.svg" /> <label> доверительное лиц</label>
+    <img src="unchecked.svg" />
     <label> почтой</label>
   </p>
   <p align="justify">
