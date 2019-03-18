@@ -1,60 +1,57 @@
-<body onload="window.print()">
+<div class="paga" id="page">
   <meta charset="utf-8" />
   <style>
-    body {
+    img {
+      margin-left: 7px;
+      width: 11px;
+      height: 11px;
+    }
+    @page {
       background-color: white;
       width: 210mm;
+      margin: 7mm 10mm 15mm 25mm;
     }
     table {
-      font-family: freesans;
-      font-size: 12pt;
+      font-family: times;
+      font-size: 9.5pt;
       width: 100%;
       border: black;
       border-collapse: collapse;
     }
     td,
     th {
-      font-family: freesans;
-      font-size: 12pt;
+      padding: 5px;
+      font-family: times;
+      font-size: 9.5pt;
     }
     label {
-      font-family: freesans;
-      font-size: 12pt;
+      font-family: times;
+      font-size: 9.5pt;
     }
     p {
-      font-family: freesans;
-      font-size: 12pt;
+      font-family: times;
+      font-size: 9.5pt;
       margin: 0;
     }
     td.grey_bg_color {
       background-color: #a8a8a8;
     }
     .ghost_font {
+      padding: 3px;
       color: #a8a8a8;
-      font-family: freesans;
-      font-size: 10pt;
+      font-family: times;
+      font-size: 8pt;
     }
     .invisible_font {
       color: white;
     }
-    .twins_left {
-      float: left;
-      width: 48%;
-    }
-    .twins_right {
-      float: right;
-      width: 48%;
-    }
-    div {
-      margin-bottom: 7em;
-    }
-    .smol_font {
-      font-family: freesans;
-      font-size: 8pt;
+    .small_font {
+      font-family: times;
+      font-size: 6.5pt;
     }
   </style>
   <p align="right">
-    <b>Ректору ФГБОУ ВО СибГМУ Минздрава России О. С. Кобяковой</b>.
+    <b>Ректору ФГБОУ ВО СибГМУ Минздрава России О. С. Кобяковой</b>
   </p>
   <br />
   <p align="justify"><b>Фамилия</b> __________</p>
@@ -116,17 +113,17 @@
       </td>
     </tr>
     <tr>
-      <td class="smol_font" align="center">
+      <td class="small_font" align="center">
         особое право
       </td>
-      <td class="smol_font" align="center">
+      <td class="small_font" align="center">
         целевой приём
       </td>
-      <td class="smol_font" align="center">
+      <td class="small_font" align="center">
         без
         <br />вступительных <br />испытаний
       </td>
-      <td class="smol_font" align="center">
+      <td class="small_font" align="center">
         общий
         <br />конкурс
       </td>
@@ -164,53 +161,61 @@
   <p align="justify">
     <b>Сведения о сдаче ЕГЭ и его результатах (со слов абитуриента):</b>
   </p>
-  <div>
-    <table class="twins_left" border="1" align="justify">
-      <tr>
-        <th>Предмет</th>
-        <th>Балл</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-    </table>
+  <table>
+    <tr>
+      <td>
+        <table border="1" align="justify">
+          <tr>
+            <th>Предмет</th>
+            <th>Балл</th>
+            <th>Год</th>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+        </table>
+      </td>
+      <td class="invisible_font">.</td>
+      <td>
+        <table border="1" align="justify">
+          <tr>
+            <th>Предмет</th>
+            <th>Балл</th>
+            <th>Год</th>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+          <tr>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+            <td class="invisible_font">.</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
-    <table class="twins_right" border="1" align="justify">
-      <tr>
-        <th>Предмет</th>
-        <th>Балл</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-      <tr>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-        <td class="invisible_font">.</td>
-      </tr>
-    </table>
-  </div>
+  <br />
   <p align="justify">
     <b>
       Сведения о результатах победителя или призёра олимпиады школьников (ОШ):
@@ -301,26 +306,26 @@
   <p align="left">
     <b>А) Льгота для зачисления без вступительных испытаний</b>
   </p>
-  <input type="checkbox" />
-  <label>
-    Победитель/призёр/член сборной заключительного этапа Всероссийской ОШ
-  </label>
-  <br />
-  <input type="checkbox" />
-  <label>
-    Победитель/призёр олимпиады школьников по профильному предмету
-  </label>
-  <br />
+  <p>
+    <img src="checked.svg" />
+    <label>
+      Победитель/призёр/член сборной заключительного этапа Всероссийской ОШ
+    </label>
+    <img src="checked.svg" />
+    <label>
+      Победитель/призёр олимпиады школьников по профильному предмету
+    </label>
+  </p>
   <br />
   <p align="left">
     <b>Б) Льгота для зачисления с использованием особого права</b>
   </p>
-  <input type="checkbox" />
-  <label>
-    Сирота или оставшийся без попечения родителей
-  </label>
-  <br />
-  <input type="checkbox" /> <label> Инвалид, ребёнок-инвалид</label>
+  <p>
+    <img src="unchecked.svg" />
+    <label>Сирота или оставшийся без попечения родителей</label>
+    <img src="unchecked.svg" />
+    <label> Инвалид, ребёнок-инвалид</label>
+  </p>
   <p align="justify">Документы, подтверждающие право __________</p>
   <p align="justify">
     <b>
@@ -328,9 +333,10 @@
       испытаний в связи с ограниченными возможностями здоровья или инвалидностью
     </b>
   </p>
-  <input type="checkbox" /> <label> да</label> <input type="checkbox" />
-  <label> нет</label>
-  <br />
+  <p>
+    <img src="unchecked.svg" /> <label> да</label> <img src="unchecked.svg" />
+    <label> нет</label>
+  </p>
   <br />
   <p align="justify"><b>В) Целевой приём</b> __________</p>
   <p align="center"><sup>(регион заполняется из справочника №5)</sup></p>
@@ -342,35 +348,37 @@
   <p align="justify">
     <b>Г) Сведения о наличии индивидуальных достижений:</b>
   </p>
-  <input type="checkbox" /> <label> да</label> <input type="checkbox" />
-  <label>нет</label>
+  <p>
+    <img src="unchecked.svg" /> <label> да</label> <img src="unchecked.svg" />
+    <label>нет</label>
+  </p>
   <p align="justify">
     Документы, подтверждающие наличие индивидуальных достижений __________
   </p>
   <p align="center"><sup>(заполнить из справочника №4)</sup></p>
   <p align="justify">
-    <b>Иностранный язык</b> (основной): <input type="checkbox" />
-    <label>английский</label> <input type="checkbox" />
-    <label> немецкий</label> <input type="checkbox" />
-    <label> французский</label> <input type="checkbox" />
+    <b>Иностранный язык</b> (основной): <img src="unchecked.svg" />
+    <label>английский</label> <img src="unchecked.svg" />
+    <label> немецкий</label> <img src="unchecked.svg" />
+    <label> французский</label> <img src="unchecked.svg" />
     <label> не изучался</label>
   </p>
   <p align="justify">
     <b>Способ возврата поданных документов</b>
     в случае непоступления на обучение (в случае предоставления оригиналов
     документов)
-    <input type="checkbox" /> <label> лично</label> <input type="checkbox" />
-    <label> доверительное лиц</label> <input type="checkbox" />
+    <img src="unchecked.svg" /> <label> лично</label> <img src="unchecked.svg" />
+    <label> доверительное лиц</label> <img src="unchecked.svg" />
     <label> почтой</label>
   </p>
   <p align="justify">
-    <b>На ериуд обучения нуждаюсь в общежитии</b>: <input type="checkbox" />
-    <label> да</label> <input type="checkbox" /> <label> нет</label>
+    <b>На ериуд обучения нуждаюсь в общежитии</b>: <img src="unchecked.svg" />
+    <label> да</label> <img src="unchecked.svg" /> <label> нет</label>
   </p>
   <p align="justify">
     Являюсь соотечественником в соответствии со статьёй 17 Федерального закона
     №99-Ф3 от 24 мая 1999 или в соответствии с Государственной программой
-    <input type="checkbox" /> <label> да</label> <input type="checkbox" />
+    <img src="unchecked.svg" /> <label> да</label> <img src="unchecked.svg" />
     <label> нет</label>
   </p>
   <p align="justify">Подтверждающие документы __________</p>
@@ -450,4 +458,4 @@
   <p align="left">
     "__" __________ 201__ г.
   </p>
-</body>
+</div>
